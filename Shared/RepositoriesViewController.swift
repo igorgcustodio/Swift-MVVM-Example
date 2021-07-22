@@ -62,4 +62,11 @@ extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailsVC = self.storyboard?.instantiateViewController(identifier: "RepositoryDetailsViewController") as! RepositoryDetailsViewController
+        detailsVC.selectedRepository = repositories[indexPath.row]
+        self.show(detailsVC, sender: self)
+        
+    }
+    
 }

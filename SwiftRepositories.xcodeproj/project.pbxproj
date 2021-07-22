@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		30C22C0E263CE6A3156C62FB /* Pods_SwiftRepositories__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */; };
+		8F7149EF26AA065100E42AF1 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */; };
+		8F7149F026AA065100E42AF1 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */; };
 		8F945A1226A8CF9F00952062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9459FD26A8CF9F00952062 /* Assets.xcassets */; };
 		8F945A1326A8CF9F00952062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9459FD26A8CF9F00952062 /* Assets.xcassets */; };
 		8F945A2026A8D27500952062 /* RepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A1F26A8D27500952062 /* RepositoriesService.swift */; };
@@ -37,6 +39,7 @@
 		2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRepositories__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433DC8809AE030E7D898DF52 /* Pods-SwiftRepositories (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (macOS)/Pods-SwiftRepositories (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		691A032DE2F19ECBA33C37F5 /* Pods-SwiftRepositories (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (macOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (macOS)/Pods-SwiftRepositories (macOS).release.xcconfig"; sourceTree = "<group>"; };
+		8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		8F9459FD26A8CF9F00952062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F945A0226A8CF9F00952062 /* SwiftRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F945A0526A8CF9F00952062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 				8F945A1E26A8D1D900952062 /* Model */,
 				8F945A1C26A8D02F00952062 /* Network */,
 				8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */,
+				8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */,
 				8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */,
 				8F945A2226A8DA0F00952062 /* Main.storyboard */,
 				8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */,
@@ -405,6 +409,7 @@
 				8F945A3E26A9013800952062 /* RepositoriesDecodable.swift in Sources */,
 				8F945A4226A90C8600952062 /* Owner.swift in Sources */,
 				8F945A3626A8FA1B00952062 /* AppDelegate.swift in Sources */,
+				8F7149EF26AA065100E42AF1 /* RepositoryDetailsViewController.swift in Sources */,
 				8F945A4526A90F6F00952062 /* UIViewController+ProgressHUD.swift in Sources */,
 				8F945A2626A8DA2B00952062 /* RepositoriesViewController.swift in Sources */,
 				8F945A2026A8D27500952062 /* RepositoriesService.swift in Sources */,
@@ -419,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F945A3526A8EE4200952062 /* CommonErrors.swift in Sources */,
+				8F7149F026AA065100E42AF1 /* RepositoryDetailsViewController.swift in Sources */,
 				8F945A2726A8DA2B00952062 /* RepositoriesViewController.swift in Sources */,
 				8F945A2B26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */,
 			);
