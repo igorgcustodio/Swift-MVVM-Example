@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F945A0E26A8CF9F00952062 /* SwiftRepositoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9459FB26A8CF9E00952062 /* SwiftRepositoriesApp.swift */; };
-		8F945A0F26A8CF9F00952062 /* SwiftRepositoriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9459FB26A8CF9E00952062 /* SwiftRepositoriesApp.swift */; };
-		8F945A1026A8CF9F00952062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9459FC26A8CF9E00952062 /* ContentView.swift */; };
-		8F945A1126A8CF9F00952062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F9459FC26A8CF9E00952062 /* ContentView.swift */; };
+		30C22C0E263CE6A3156C62FB /* Pods_SwiftRepositories__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */; };
 		8F945A1226A8CF9F00952062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9459FD26A8CF9F00952062 /* Assets.xcassets */; };
 		8F945A1326A8CF9F00952062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F9459FD26A8CF9F00952062 /* Assets.xcassets */; };
+		8F945A2026A8D27500952062 /* RepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A1F26A8D27500952062 /* RepositoriesService.swift */; };
+		8F945A2326A8DA0F00952062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2226A8DA0F00952062 /* Main.storyboard */; };
+		8F945A2426A8DA0F00952062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2226A8DA0F00952062 /* Main.storyboard */; };
+		8F945A2626A8DA2B00952062 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */; };
+		8F945A2726A8DA2B00952062 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */; };
+		8F945A2A26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */; };
+		8F945A2B26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */; };
+		8F945A2C26A8EB6900952062 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */; };
+		8F945A2D26A8EB6900952062 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */; };
+		8F945A2F26A8EBD200952062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */; };
+		8F945A3026A8EBD200952062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */; };
+		8F945A3426A8EE4200952062 /* CommonErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A3326A8EE4200952062 /* CommonErrors.swift */; };
+		8F945A3526A8EE4200952062 /* CommonErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A3326A8EE4200952062 /* CommonErrors.swift */; };
+		8F945A3626A8FA1B00952062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A1D26A8D1A800952062 /* AppDelegate.swift */; };
+		8F945A3826A8FCE300952062 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A3726A8FCE300952062 /* Repository.swift */; };
+		8F945A3E26A9013800952062 /* RepositoriesDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A3D26A9013800952062 /* RepositoriesDecodable.swift */; };
+		8F945A4226A90C8600952062 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4126A90C8600952062 /* Owner.swift */; };
+		8F945A4526A90F6F00952062 /* UIViewController+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4426A90F6F00952062 /* UIViewController+ProgressHUD.swift */; };
+		8F945A4726A90FB100952062 /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4626A90FB100952062 /* NibReusable.swift */; };
+		E190874CC925BFB292A5EC97 /* Pods_SwiftRepositories__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA7BC54F74567B9ABE0FF6 /* Pods_SwiftRepositories__iOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F9459FB26A8CF9E00952062 /* SwiftRepositoriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftRepositoriesApp.swift; sourceTree = "<group>"; };
-		8F9459FC26A8CF9E00952062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1623FCBFA9A53B9F4E22BF0D /* Pods-SwiftRepositories (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRepositories__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		433DC8809AE030E7D898DF52 /* Pods-SwiftRepositories (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (macOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (macOS)/Pods-SwiftRepositories (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		691A032DE2F19ECBA33C37F5 /* Pods-SwiftRepositories (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (macOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (macOS)/Pods-SwiftRepositories (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		8F9459FD26A8CF9F00952062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F945A0226A8CF9F00952062 /* SwiftRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F945A0526A8CF9F00952062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F945A0A26A8CF9F00952062 /* SwiftRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F945A0C26A8CF9F00952062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F945A0D26A8CF9F00952062 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8F945A1D26A8D1A800952062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F945A1F26A8D27500952062 /* RepositoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesService.swift; sourceTree = "<group>"; };
+		8F945A2226A8DA0F00952062 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F945A3326A8EE4200952062 /* CommonErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonErrors.swift; sourceTree = "<group>"; };
+		8F945A3726A8FCE300952062 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		8F945A3D26A9013800952062 /* RepositoriesDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesDecodable.swift; sourceTree = "<group>"; };
+		8F945A4126A90C8600952062 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		8F945A4426A90F6F00952062 /* UIViewController+ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ProgressHUD.swift"; sourceTree = "<group>"; };
+		8F945A4626A90FB100952062 /* NibReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
+		92FA7BC54F74567B9ABE0FF6 /* Pods_SwiftRepositories__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRepositories__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D542F2E9D614785C438F141 /* Pods-SwiftRepositories (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E190874CC925BFB292A5EC97 /* Pods_SwiftRepositories__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C22C0E263CE6A3156C62FB /* Pods_SwiftRepositories__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,15 +87,22 @@
 				8F945A0426A8CF9F00952062 /* iOS */,
 				8F945A0B26A8CF9F00952062 /* macOS */,
 				8F945A0326A8CF9F00952062 /* Products */,
+				D43E4C2240CE387D7EAD97A9 /* Pods */,
+				A8A294DB57F990F619C69E03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8F9459FA26A8CF9E00952062 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8F9459FB26A8CF9E00952062 /* SwiftRepositoriesApp.swift */,
-				8F9459FC26A8CF9E00952062 /* ContentView.swift */,
-				8F9459FD26A8CF9F00952062 /* Assets.xcassets */,
+				8F945A3126A8EE0400952062 /* Common */,
+				8F945A1E26A8D1D900952062 /* Model */,
+				8F945A1C26A8D02F00952062 /* Network */,
+				8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */,
+				8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */,
+				8F945A2226A8DA0F00952062 /* Main.storyboard */,
+				8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */,
+				8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,7 +119,9 @@
 		8F945A0426A8CF9F00952062 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				8F9459FD26A8CF9F00952062 /* Assets.xcassets */,
 				8F945A0526A8CF9F00952062 /* Info.plist */,
+				8F945A1D26A8D1A800952062 /* AppDelegate.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -90,6 +135,102 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		8F945A1C26A8D02F00952062 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A2126A8D30800952062 /* Services */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8F945A1E26A8D1D900952062 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A3726A8FCE300952062 /* Repository.swift */,
+				8F945A4126A90C8600952062 /* Owner.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F945A2126A8D30800952062 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A3B26A9010E00952062 /* Repositories */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8F945A3126A8EE0400952062 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A4826A90FD600952062 /* Utils */,
+				8F945A4326A90F4200952062 /* Extension */,
+				8F945A3226A8EE0C00952062 /* Erros */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F945A3226A8EE0C00952062 /* Erros */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A3326A8EE4200952062 /* CommonErrors.swift */,
+			);
+			path = Erros;
+			sourceTree = "<group>";
+		};
+		8F945A3B26A9010E00952062 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A3C26A9011900952062 /* Models */,
+				8F945A1F26A8D27500952062 /* RepositoriesService.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8F945A3C26A9011900952062 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A3D26A9013800952062 /* RepositoriesDecodable.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F945A4326A90F4200952062 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A4426A90F6F00952062 /* UIViewController+ProgressHUD.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8F945A4826A90FD600952062 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A4626A90FB100952062 /* NibReusable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A8A294DB57F990F619C69E03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FA7BC54F74567B9ABE0FF6 /* Pods_SwiftRepositories__iOS_.framework */,
+				2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D43E4C2240CE387D7EAD97A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D542F2E9D614785C438F141 /* Pods-SwiftRepositories (iOS).debug.xcconfig */,
+				1623FCBFA9A53B9F4E22BF0D /* Pods-SwiftRepositories (iOS).release.xcconfig */,
+				433DC8809AE030E7D898DF52 /* Pods-SwiftRepositories (macOS).debug.xcconfig */,
+				691A032DE2F19ECBA33C37F5 /* Pods-SwiftRepositories (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F945A1626A8CF9F00952062 /* Build configuration list for PBXNativeTarget "SwiftRepositories (iOS)" */;
 			buildPhases = (
+				B4E64AB7466B3149564BE63D /* [CP] Check Pods Manifest.lock */,
 				8F9459FE26A8CF9F00952062 /* Sources */,
 				8F9459FF26A8CF9F00952062 /* Frameworks */,
 				8F945A0026A8CF9F00952062 /* Resources */,
+				4791C93689F6EC48809B6C9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -114,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F945A1926A8CF9F00952062 /* Build configuration list for PBXNativeTarget "SwiftRepositories (macOS)" */;
 			buildPhases = (
+				EAC8C3FF0E9BDEA3FE62386A /* [CP] Check Pods Manifest.lock */,
 				8F945A0626A8CF9F00952062 /* Sources */,
 				8F945A0726A8CF9F00952062 /* Frameworks */,
 				8F945A0826A8CF9F00952062 /* Resources */,
@@ -168,7 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F945A2C26A8EB6900952062 /* RepositoryTableViewCell.xib in Resources */,
 				8F945A1226A8CF9F00952062 /* Assets.xcassets in Resources */,
+				8F945A2F26A8EBD200952062 /* LaunchScreen.storyboard in Resources */,
+				8F945A2326A8DA0F00952062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,19 +323,94 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F945A2D26A8EB6900952062 /* RepositoryTableViewCell.xib in Resources */,
 				8F945A1326A8CF9F00952062 /* Assets.xcassets in Resources */,
+				8F945A3026A8EBD200952062 /* LaunchScreen.storyboard in Resources */,
+				8F945A2426A8DA0F00952062 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4791C93689F6EC48809B6C9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4E64AB7466B3149564BE63D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRepositories (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC8C3FF0E9BDEA3FE62386A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRepositories (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F9459FE26A8CF9F00952062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F945A1026A8CF9F00952062 /* ContentView.swift in Sources */,
-				8F945A0E26A8CF9F00952062 /* SwiftRepositoriesApp.swift in Sources */,
+				8F945A4726A90FB100952062 /* NibReusable.swift in Sources */,
+				8F945A3E26A9013800952062 /* RepositoriesDecodable.swift in Sources */,
+				8F945A4226A90C8600952062 /* Owner.swift in Sources */,
+				8F945A3626A8FA1B00952062 /* AppDelegate.swift in Sources */,
+				8F945A4526A90F6F00952062 /* UIViewController+ProgressHUD.swift in Sources */,
+				8F945A2626A8DA2B00952062 /* RepositoriesViewController.swift in Sources */,
+				8F945A2026A8D27500952062 /* RepositoriesService.swift in Sources */,
+				8F945A3426A8EE4200952062 /* CommonErrors.swift in Sources */,
+				8F945A2A26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */,
+				8F945A3826A8FCE300952062 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F945A1126A8CF9F00952062 /* ContentView.swift in Sources */,
-				8F945A0F26A8CF9F00952062 /* SwiftRepositoriesApp.swift in Sources */,
+				8F945A3526A8EE4200952062 /* CommonErrors.swift in Sources */,
+				8F945A2726A8DA2B00952062 /* RepositoriesViewController.swift in Sources */,
+				8F945A2B26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,9 +540,11 @@
 		};
 		8F945A1726A8CF9F00952062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D542F2E9D614785C438F141 /* Pods-SwiftRepositories (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.github.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W4CDBHWB5;
 				ENABLE_PREVIEWS = YES;
@@ -333,15 +558,17 @@
 				PRODUCT_NAME = SwiftRepositories;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8F945A1826A8CF9F00952062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1623FCBFA9A53B9F4E22BF0D /* Pods-SwiftRepositories (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://api.github.com";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4W4CDBHWB5;
 				ENABLE_PREVIEWS = YES;
@@ -355,17 +582,19 @@
 				PRODUCT_NAME = SwiftRepositories;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		8F945A1A26A8CF9F00952062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 433DC8809AE030E7D898DF52 /* Pods-SwiftRepositories (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4W4CDBHWB5;
@@ -386,10 +615,12 @@
 		};
 		8F945A1B26A8CF9F00952062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 691A032DE2F19ECBA33C37F5 /* Pods-SwiftRepositories (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4W4CDBHWB5;
