@@ -31,6 +31,11 @@
 		8F945A4226A90C8600952062 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4126A90C8600952062 /* Owner.swift */; };
 		8F945A4526A90F6F00952062 /* UIViewController+ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4426A90F6F00952062 /* UIViewController+ProgressHUD.swift */; };
 		8F945A4726A90FB100952062 /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F945A4626A90FB100952062 /* NibReusable.swift */; };
+		B3AB1A5326AA14700099A8B6 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AB1A5226AA14700099A8B6 /* RepositoriesViewModel.swift */; };
+		B3C1F30426AB3DD00039C755 /* RepositoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1F30326AB3DD00039C755 /* RepositoryDetailsViewModel.swift */; };
+		B3C1F30626AB41E40039C755 /* RepositoriesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1F30526AB41E40039C755 /* RepositoriesViewModelProtocol.swift */; };
+		B3C1F30826AB42040039C755 /* RepositoriesViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1F30726AB42040039C755 /* RepositoriesViewDelegate.swift */; };
+		B3C1F30A26AB42320039C755 /* RepositoryDetailsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C1F30926AB42320039C755 /* RepositoryDetailsViewModelProtocol.swift */; };
 		E190874CC925BFB292A5EC97 /* Pods_SwiftRepositories__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FA7BC54F74567B9ABE0FF6 /* Pods_SwiftRepositories__iOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +66,11 @@
 		8F945A4626A90FB100952062 /* NibReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
 		92FA7BC54F74567B9ABE0FF6 /* Pods_SwiftRepositories__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRepositories__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D542F2E9D614785C438F141 /* Pods-SwiftRepositories (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRepositories (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftRepositories (iOS)/Pods-SwiftRepositories (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		B3AB1A5226AA14700099A8B6 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		B3C1F30326AB3DD00039C755 /* RepositoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		B3C1F30526AB41E40039C755 /* RepositoriesViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModelProtocol.swift; sourceTree = "<group>"; };
+		B3C1F30726AB42040039C755 /* RepositoriesViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewDelegate.swift; sourceTree = "<group>"; };
+		B3C1F30926AB42320039C755 /* RepositoryDetailsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,14 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				8F945A3126A8EE0400952062 /* Common */,
-				8F945A1E26A8D1D900952062 /* Model */,
 				8F945A1C26A8D02F00952062 /* Network */,
-				8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */,
-				8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */,
+				8F945A1E26A8D1D900952062 /* Model */,
+				B3C1F30B26AB425B0039C755 /* View */,
+				B3AB1A4F26AA13F10099A8B6 /* ViewModel */,
 				8F945A2E26A8EBD200952062 /* LaunchScreen.storyboard */,
-				8F945A2226A8DA0F00952062 /* Main.storyboard */,
-				8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */,
-				8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -222,6 +229,30 @@
 				2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3AB1A4F26AA13F10099A8B6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3C1F30526AB41E40039C755 /* RepositoriesViewModelProtocol.swift */,
+				B3AB1A5226AA14700099A8B6 /* RepositoriesViewModel.swift */,
+				B3C1F30726AB42040039C755 /* RepositoriesViewDelegate.swift */,
+				B3C1F30326AB3DD00039C755 /* RepositoryDetailsViewModel.swift */,
+				B3C1F30926AB42320039C755 /* RepositoryDetailsViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3C1F30B26AB425B0039C755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F945A2526A8DA2B00952062 /* RepositoriesViewController.swift */,
+				8F7149EE26AA065100E42AF1 /* RepositoryDetailsViewController.swift */,
+				8F945A2226A8DA0F00952062 /* Main.storyboard */,
+				8F945A2826A8EB6900952062 /* RepositoryTableViewCell.swift */,
+				8F945A2926A8EB6900952062 /* RepositoryTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D43E4C2240CE387D7EAD97A9 /* Pods */ = {
@@ -405,13 +436,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C1F30826AB42040039C755 /* RepositoriesViewDelegate.swift in Sources */,
 				8F945A4726A90FB100952062 /* NibReusable.swift in Sources */,
 				8F945A3E26A9013800952062 /* RepositoriesDecodable.swift in Sources */,
 				8F945A4226A90C8600952062 /* Owner.swift in Sources */,
+				B3C1F30426AB3DD00039C755 /* RepositoryDetailsViewModel.swift in Sources */,
 				8F945A3626A8FA1B00952062 /* AppDelegate.swift in Sources */,
 				8F7149EF26AA065100E42AF1 /* RepositoryDetailsViewController.swift in Sources */,
+				B3C1F30A26AB42320039C755 /* RepositoryDetailsViewModelProtocol.swift in Sources */,
+				B3C1F30626AB41E40039C755 /* RepositoriesViewModelProtocol.swift in Sources */,
 				8F945A4526A90F6F00952062 /* UIViewController+ProgressHUD.swift in Sources */,
 				8F945A2626A8DA2B00952062 /* RepositoriesViewController.swift in Sources */,
+				B3AB1A5326AA14700099A8B6 /* RepositoriesViewModel.swift in Sources */,
 				8F945A2026A8D27500952062 /* RepositoriesService.swift in Sources */,
 				8F945A3426A8EE4200952062 /* CommonErrors.swift in Sources */,
 				8F945A2A26A8EB6900952062 /* RepositoryTableViewCell.swift in Sources */,

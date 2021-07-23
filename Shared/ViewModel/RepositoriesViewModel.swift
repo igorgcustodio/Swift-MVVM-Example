@@ -1,0 +1,42 @@
+//
+//  RepositoriesViewModel.swift
+//  SwiftRepositories (iOS)
+//
+//  Created by Igor Custodio on 22/07/21.
+//
+
+import UIKit
+
+final class RepositoriesViewModel: RepositoriesViewModelProtocol {
+    
+    private var repositoriesService: RepositoriesServiceProtocol
+    var repositories: [Repository] = []
+    var delegate: RepositoriesViewDelegate?
+    
+    init() {
+        repositoriesService = RepositoriesService()
+    }
+    
+    func loadData() {
+        delegate?.showLoading()
+        repositoriesService.getSwiftRepositories { result in
+            self.delegate?.hideLoading()
+            
+            do {
+                guard let result = try result() else { return }
+                self.repositories = result
+                self.delegate?.dataLoaded(with: self.repositories)
+            } catch {
+                self.delegate?.showAlertError(title: "Erro", message: "Erro ao carregar a lista de repositórios")
+            }
+        }
+    }
+    
+    func goToDetails(viewController: UIViewController, index: Int) {
+        let repositoryViewModel = RepositoryDetailsViewModel(repository: self.repositories[index])
+        
+        let detailsVC = viewController.storyboard?.instantiateViewController(identifier: "RepositoryDetailsViewController") as! RepositoryDetailsViewController
+        detailsVC.viewModel = repositoryViewModel
+        viewController.show(detailsVC, sender: self)
+    }
+}

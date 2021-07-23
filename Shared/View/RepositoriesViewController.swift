@@ -11,9 +11,7 @@ final class RepositoriesViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var repositories: [Repository] = []
-    
-    private var repositoriesService: RepositoriesServiceProtocol = RepositoriesService()
+    fileprivate var viewModel: RepositoriesViewModelProtocol = RepositoriesViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +25,8 @@ final class RepositoriesViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(cellType: RepositoryTableViewCell.self)
         tableView.rowHeight = UITableView.automaticDimension
+        viewModel.delegate = self
+        
     }
     
     private func applyStyle() {
@@ -34,18 +34,7 @@ final class RepositoriesViewController: UIViewController {
     }
 
     private func loadData() {
-        showProgressHud()
-        repositoriesService.getSwiftRepositories { result in
-            self.hideProgressHud()
-            do {
-                guard let result = try result() else { return }
-                self.repositories = result
-                self.tableView.reloadData()
-            } catch {
-                let alertError = UIAlertController(title: "Erro", message: "Erro ao carregar a lista de repositorios", preferredStyle: .alert)
-                self.present(alertError, animated: true, completion: nil)
-            }
-        }
+        viewModel.loadData()
     }
 
 }
@@ -53,20 +42,38 @@ final class RepositoriesViewController: UIViewController {
 extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repositories.count
+        return viewModel.repositories.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: RepositoryTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        cell.setup(repository: repositories[indexPath.row])
+        cell.setup(repository: viewModel.repositories[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailsVC = self.storyboard?.instantiateViewController(identifier: "RepositoryDetailsViewController") as! RepositoryDetailsViewController
-        detailsVC.selectedRepository = repositories[indexPath.row]
-        self.show(detailsVC, sender: self)
-        
+        viewModel.goToDetails(viewController: self, index: indexPath.row)
     }
+    
+}
+
+extension RepositoriesViewController: RepositoriesViewDelegate {
+    func dataLoaded(with repositories: [Repository]) {
+        tableView.reloadData()
+    }
+    
+    func showAlertError(title: String, message: String) {
+        let alertError = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        self.present(alertError, animated: true, completion: nil)
+    }
+    
+    func showLoading() {
+        showProgressHud()
+    }
+    
+    func hideLoading() {
+        hideProgressHud()
+    }
+    
     
 }
