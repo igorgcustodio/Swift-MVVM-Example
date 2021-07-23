@@ -18,9 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func setupFirstScreen() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateInitialViewController()
-        window?.rootViewController = viewController
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let viewController = RepositoriesViewController.instantiate()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 

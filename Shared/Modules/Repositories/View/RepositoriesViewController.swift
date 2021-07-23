@@ -31,12 +31,13 @@ final class RepositoriesViewController: UIViewController {
     
     private func applyStyle() {
         tableView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
+        self.title = "Repositories"
+        self.navigationItem.backButtonTitle = ""
     }
 
     private func loadData() {
         viewModel.loadData()
     }
-
 }
 
 extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource {
@@ -54,16 +55,16 @@ extension RepositoriesViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.goToDetails(viewController: self, index: indexPath.row)
     }
-    
 }
 
 extension RepositoriesViewController: RepositoriesViewDelegate {
-    func dataLoaded(with repositories: [Repository]) {
+    func dataLoaded() {
         tableView.reloadData()
     }
     
     func showAlertError(title: String, message: String) {
         let alertError = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertError.addAction(UIAlertAction(title: "OK", style: .destructive, handler: nil))
         self.present(alertError, animated: true, completion: nil)
     }
     

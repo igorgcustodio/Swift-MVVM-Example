@@ -25,7 +25,7 @@ final class RepositoriesViewModel: RepositoriesViewModelProtocol {
             do {
                 guard let result = try result() else { return }
                 self.repositories = result
-                self.delegate?.dataLoaded(with: self.repositories)
+                self.delegate?.dataLoaded()
             } catch {
                 self.delegate?.showAlertError(title: "Erro", message: "Erro ao carregar a lista de repositórios")
             }
@@ -33,10 +33,7 @@ final class RepositoriesViewModel: RepositoriesViewModelProtocol {
     }
     
     func goToDetails(viewController: UIViewController, index: Int) {
-        let repositoryViewModel = RepositoryDetailsViewModel(repository: self.repositories[index])
-        
-        let detailsVC = viewController.storyboard?.instantiateViewController(identifier: "RepositoryDetailsViewController") as! RepositoryDetailsViewController
-        detailsVC.viewModel = repositoryViewModel
+        let detailsVC = RepositoryDetailsViewController.instantiate(repository: self.repositories[index])
         viewController.show(detailsVC, sender: self)
     }
 }

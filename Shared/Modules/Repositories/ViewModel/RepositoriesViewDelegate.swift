@@ -8,7 +8,7 @@
 import Foundation
 
 protocol RepositoriesViewDelegate {
-    func dataLoaded(with repositories: [Repository])
+    func dataLoaded()
     func showLoading()
     func hideLoading()
     func showAlertError(title: String, message: String)
