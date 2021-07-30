@@ -10,7 +10,11 @@ import UIKit
 final class RepositoriesViewModel: RepositoriesViewModelProtocol {
     
     private var repositoriesService: RepositoriesServiceProtocol
-    var repositories: [Repository] = []
+    var repositories: [Repository] = [] {
+        didSet {
+            self.delegate?.dataLoaded()
+        }
+    }
     var delegate: RepositoriesViewDelegate?
     
     init() {
@@ -25,7 +29,6 @@ final class RepositoriesViewModel: RepositoriesViewModelProtocol {
             do {
                 guard let result = try result() else { return }
                 self.repositories = result
-                self.delegate?.dataLoaded()
             } catch {
                 self.delegate?.showAlertError(title: "Erro", message: "Erro ao carregar a lista de repositórios")
             }

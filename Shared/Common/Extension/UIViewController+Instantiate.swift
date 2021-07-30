@@ -7,14 +7,6 @@
 
 import UIKit
 
-public enum FlowType {
-    case navigation
-    case push
-    case modal
-    case overContent
-    
-}
-
 extension UIViewController {
     @objc public class func instantiate() -> Self {
         func instantiateFromNib<T: UIViewController>(_ viewType: T.Type) -> T {

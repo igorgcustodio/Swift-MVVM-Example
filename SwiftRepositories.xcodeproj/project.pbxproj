@@ -116,7 +116,6 @@
 				8F945A3126A8EE0400952062 /* Common */,
 				8F945A1C26A8D02F00952062 /* Network */,
 				8F945A1E26A8D1D900952062 /* Model */,
-				B3C1F30B26AB425B0039C755 /* View */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -223,13 +222,6 @@
 				2E55BE06342B63C1AA4EFE97 /* Pods_SwiftRepositories__macOS_.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B3C1F30B26AB425B0039C755 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B3C1F30C26AB4A210039C755 /* Modules */ = {
