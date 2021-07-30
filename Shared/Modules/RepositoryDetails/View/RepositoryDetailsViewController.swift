@@ -17,7 +17,13 @@ final class RepositoryDetailsViewController: UIViewController {
     @IBOutlet weak var labelStarsCount: UILabel!
     @IBOutlet weak var imageViewAvatar: UIImageView!
     
-    var selectedRepository: Repository?
+    var viewModel: RepositoryDetailsViewModelProtocol!
+    
+    class func instantiate(repository: Repository) -> RepositoryDetailsViewController {
+        let viewController = RepositoryDetailsViewController.instantiate()
+        viewController.viewModel = RepositoryDetailsViewModel(repository: repository)
+        return viewController
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +32,7 @@ final class RepositoryDetailsViewController: UIViewController {
     }
     
     func setup() {
-        guard let repository = selectedRepository else { return }
+        let repository = viewModel.getRepository()
         print(repository.name)
         labelTitle.text = repository.name
         labelDescription.text = repository.description
